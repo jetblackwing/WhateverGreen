@@ -1011,6 +1011,7 @@ static BuiltinModel devIntel[] {
 	// Reserved/unused/generic Ice Lake },
 	{ 0x9A49, 0x0000, "Intel Iris Xe Graphics" },
 	// Reserved/unused/generic Tiger Lake },
+	// The above two lines points to irisxe graphics, with address
 };
 
 const char *WEG::getIntelModel(uint32_t dev, uint32_t &fakeId) {
