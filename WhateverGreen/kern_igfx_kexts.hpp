@@ -31,5 +31,8 @@ extern KernelPatcher::KextInfo kextIntelCNLFb;
 extern KernelPatcher::KextInfo kextIntelICL;
 extern KernelPatcher::KextInfo kextIntelICLLPFb;
 extern KernelPatcher::KextInfo kextIntelICLHPFb;
+extern KernelPatcher::KextInfo kextIntelTGL;
+extern KernelPatcher::KextInfo kextIntelTGLLPFb;
+extern KernelPatcher::KextInfo kextIntelTGLHPFb;
 
 #endif /* kern_igfx_kexts_hpp */
