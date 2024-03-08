@@ -1009,6 +1009,8 @@ static BuiltinModel devIntel[] {
 	{ 0x8A5A, 0x0000, "Intel Iris Plus Graphics" },
 	{ 0x8A5C, 0x0000, "Intel Iris Plus Graphics" },
 	// Reserved/unused/generic Ice Lake },
+	{ 0x9A49, 0x0000, "Intel Iris Xe Graphics" },
+	// Reserved/unused/generic Tiger Lake },
 };
 
 const char *WEG::getIntelModel(uint32_t dev, uint32_t &fakeId) {

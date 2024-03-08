@@ -31,7 +31,7 @@ void IGFX::init() {
 	auto generation = bdi.cpuGeneration;
 	auto family = bdi.cpuFamily;
 	auto model = bdi.cpuModel;
-	switch (genehttps://github.com/acidanthera/WhateverGreen/tree/masterration) {
+	switch (generation) {
 		case CPUInfo::CpuGeneration::Penryn:
 		case CPUInfo::CpuGeneration::Nehalem:
 			// Do not warn about legacy processors (e.g. Xeon).
