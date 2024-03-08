@@ -31,7 +31,7 @@ void IGFX::init() {
 	auto generation = bdi.cpuGeneration;
 	auto family = bdi.cpuFamily;
 	auto model = bdi.cpuModel;
-	switch (generation) {
+	switch (genehttps://github.com/acidanthera/WhateverGreen/tree/masterration) {
 		case CPUInfo::CpuGeneration::Penryn:
 		case CPUInfo::CpuGeneration::Nehalem:
 			// Do not warn about legacy processors (e.g. Xeon).
@@ -116,6 +116,27 @@ void IGFX::init() {
 			modTypeCCheckDisabler.enabled = true;
 			break;
 		case CPUInfo::CpuGeneration::IceLake:
+			supportsGuCFirmware = true;
+			currentGraphics = &kextIntelICL;
+			currentFramebuffer = &kextIntelICLLPFb;
+			currentFramebufferOpt = &kextIntelICLHPFb;
+			modDVMTCalcFix.available = true;
+			break;
+			case CPUInfo::CpuGeneration::TigerLake:
+			supportsGuCFirmware = true;
+			currentGraphics = &kextIntelICL;
+			currentFramebuffer = &kextIntelICLLPFb;
+			currentFramebufferOpt = &kextIntelICLHPFb;
+			modDVMTCalcFix.available = true;
+			break;
+			case CPUInfo::CpuGeneration::XeGraphics:
+			supportsGuCFirmware = true;
+			currentGraphics = &kextIntelICL;
+			currentFramebuffer = &kextIntelICLLPFb;
+			currentFramebufferOpt = &kextIntelICLHPFb;
+			modDVMTCalcFix.available = true;
+			break;
+			case CPUInfo::CpuGeneration::TGL:
 			supportsGuCFirmware = true;
 			currentGraphics = &kextIntelICL;
 			currentFramebuffer = &kextIntelICLLPFb;
