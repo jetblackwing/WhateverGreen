@@ -1009,9 +1009,16 @@ static BuiltinModel devIntel[] {
 	{ 0x8A5A, 0x0000, "Intel Iris Plus Graphics" },
 	{ 0x8A5C, 0x0000, "Intel Iris Plus Graphics" },
 	// Reserved/unused/generic Ice Lake },
-	{ 0x9A49, 0x0000, "Intel Iris Xe Graphics" },
+	// { 0x9A49, 0x0000, "Intel Iris Xe Graphics" },
+	// above line is undefined because its unsure and causes loops
+	{ 0x9A49, 0x8A52, "Intel Iris Xe Graphics" },
+	{ 0x9A40, 0x8A52, "Intel Iris Xe Graphics" },
+	{ 0x9A60, 0x8A5A, "Intel Iris Xe Graphics" },
+	{ 0x9A68, 0x8A5A, "Intel Iris Xe Graphics" },
+	{ 0x9A70, 0x8A5A, "Intel Iris Xe Graphics" },
+	{ 0x9A78, 0x8A5A, "Intel Iris Xe Graphics" },
 	// Reserved/unused/generic Tiger Lake },
-	// The above two lines points to irisxe graphics, with address
+	// The above lines points to irisxe graphics, with address
 };
 
 const char *WEG::getIntelModel(uint32_t dev, uint32_t &fakeId) {
